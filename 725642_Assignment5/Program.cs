@@ -8,33 +8,30 @@ namespace _725642_Assignment5
 {
     class Program
     {
-        string[] Letters = new string[26] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+      static void Main(string[] args)
+        {
+            Program a = new Program();
+            Console.WriteLine("the lomgest word is: ");
+            Console.WriteLine(a.MyFunctionA("Ada Lovelace wrote the first algorithm designed for procesing bt an analytical Engine."));
 
-        public static void Main()
-        {
-            Program orange = new Program();
-            Console.WriteLine(orange.Gematria("universe"));
-            Console.ReadLine();
         }
-        public int Gematria(string word)
+        public MyFunctionA(string input)
         {
-            int GematriaValue = 0;
-            for (int i = 0; i < word.Length; i++)
-            {
-                GematriaValue += LetterValue(word[i].ToString());
-            }
-            return GematriaValue;
-        }
-        public int LetterValue(string letter)
-        {
-            int x = 0;
-            while (Letters[x] != letter)
-            {
-                if (Letters[x++] == letter)
-                    return -1;
-            }
-            return x + 1;
-        }
+            string[] words = input.Split('');
+            int wordArrayLength = new int[wordArrayLength];
 
+            foreach (var word in words)
+            {
+
+            }
+            string currentWord = words[0];
+            string nextWord;
+            for (int y = 0; y < words.Length - 1; y++)
+            {
+                currentWord = words[y];
+                nextWord = words[y + 1];
+
+            }
+
+        }
     }
-}
